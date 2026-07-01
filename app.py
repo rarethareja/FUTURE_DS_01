@@ -16,11 +16,10 @@ def format_number(num):
 
 st.set_page_config(
     page_title="Business Sales Dashboard",
-    page_icon="📊",
     layout="wide"
 )
 
-st.title("📊 Business Sales Performance Dashboard")
+st.title("Business Sales Performance Dashboard")
 
 st.markdown(
     """
@@ -75,9 +74,7 @@ st.sidebar.markdown("---")
 
 st.sidebar.info(
     """
-## FUTURE_DS_01
-
-**Business Sales Analytics**
+### Business Sales Analytics
 
 Dataset:
 Superstore Sales
@@ -108,10 +105,10 @@ avg_order = total_sales / total_orders if total_orders else 0
 
 col1, col2, col3, col4 = st.columns(4)
 
-col1.metric("💰 Total Sales", format_number(total_sales))
-col2.metric("📈 Total Profit", format_number(total_profit))
-col3.metric("📦 Total Orders", f"{total_orders:,}")
-col4.metric("🛒 Avg Order", format_number(avg_order))
+col1.metric("Total Sales", format_number(total_sales))
+col2.metric("Total Profit", format_number(total_profit))
+col3.metric("Total Orders", f"{total_orders:,}")
+col4.metric("Avg Order", format_number(avg_order))
 
 # ----------------------------
 # Monthly Sales Trend
@@ -138,7 +135,7 @@ fig = px.line(
     x="Date",
     y="Sales",
     markers=True,
-    title="📈 Monthly Sales Trend",
+    title="Monthly Sales Trend",
     color_discrete_sequence=px.colors.sequential.Blues_r
 )
 
@@ -170,7 +167,7 @@ with col1:
         x="Category",
         y="Sales",
         color="Category",
-        title="💰 Sales by Category",
+        title="Sales by Category",
         color_discrete_sequence=px.colors.sequential.Blues_r
     )
 
@@ -185,7 +182,7 @@ with col2:
         x="Category",
         y="Profit",
         color="Category",
-        title="📈 Profit by Category",
+        title="Profit by Category",
         color_discrete_sequence=px.colors.sequential.Blues_r
     )
 
@@ -213,7 +210,7 @@ with col1:
         x="Region",
         y="Sales",
         color="Region",
-        title="🌍 Sales by Region",
+        title="Sales by Region",
         color_discrete_sequence=px.colors.sequential.Blues_r
     )
 
@@ -228,7 +225,7 @@ with col2:
         x="Region",
         y="Profit",
         color="Region",
-        title="💵 Profit by Region",
+        title="Profit by Region",
         color_discrete_sequence=px.colors.sequential.Blues_r
     )
 
@@ -265,7 +262,7 @@ with col1:
         x="Sales",
         y="Product Name",
         orientation="h",
-        title="🏆 Top 10 Products",
+        title="Top 10 Products",
         color_discrete_sequence=px.colors.sequential.Blues_r
     )
 
@@ -279,7 +276,7 @@ with col2:
         segment_data,
         values="Sales",
         names="Segment",
-        title="👥 Sales by Segment",
+        title="Sales by Segment",
         color_discrete_sequence=px.colors.sequential.Blues_r
     )
 
@@ -301,7 +298,7 @@ fig = px.line(
     x="Discount",
     y="Profit",
     markers=True,
-    title="📉 Average Profit by Discount",
+    title="Average Profit by Discount",
     color_discrete_sequence=px.colors.sequential.Blues_r
 )
 
@@ -309,12 +306,12 @@ st.plotly_chart(fig, use_container_width=True)
 
 st.markdown("---")
 
-st.subheader("📋 Key Business Insights")
+st.subheader("Key Business Insights")
 
 st.markdown("""
-- 📈 Sales increased steadily over the analysis period.
-- 💰 Technology products generated the highest revenue.
-- 🌍 Regional performance varied significantly across markets.
-- 👥 Consumer customers contributed the largest share of sales.
-- 🎯 Higher discounts generally reduced average profitability.
+- Sales increased steadily over the analysis period.
+- Technology products generated the highest revenue.
+- Regional performance varied significantly across markets.
+- Consumer customers contributed the largest share of sales.
+- Higher discounts generally reduced average profitability.
 """)
