@@ -1,98 +1,138 @@
-# 📊 Business Sales Performance Analytics
+# 📊 Business Sales Performance Dashboard
 
-**Future Interns – Data Science & Analytics Task 1**
+## Future Interns – Data Science & Analytics Task 1
 
-## 📌 Project Overview
-
-This project focuses on analyzing retail sales data to help businesses understand their performance and make data-driven decisions.
-
-Using Python for data preparation and Power BI for visualization, the project explores sales trends, profitability, customer segments, and regional performance to generate actionable business insights.
+An end-to-end Business Sales Analytics project built using Python, Pandas, Plotly, and Streamlit. The project analyzes Superstore sales data to uncover business insights and presents them through an interactive dashboard.
 
 ---
 
-## 🎯 Objectives
+## 🚀 Features
 
-* Clean and prepare raw sales data
-* Perform exploratory data analysis (EDA)
-* Analyze sales and profit trends
-* Identify top-performing products and categories
-* Evaluate regional and customer segment performance
-* Build an interactive Power BI dashboard
-* Provide actionable business recommendations
+- Data Cleaning & Preprocessing
+- Exploratory Data Analysis (EDA)
+- Interactive Streamlit Dashboard
+- KPI Cards
+- Monthly Sales Trend
+- Sales & Profit Analysis
+- Region-wise Performance
+- Category-wise Analysis
+- Customer Segment Analysis
+- Top 10 Products
+- Discount vs Profit Analysis
+- Dynamic Filters
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🛠 Tech Stack
 
-* Python
-* Pandas
-* Matplotlib
-* Jupyter Notebook
-* Power BI
-* Git & GitHub
+- Python
+- Pandas
+- NumPy
+- Plotly
+- Streamlit
+- Jupyter Notebook
 
 ---
 
 ## 📂 Project Structure
 
-```text
+```
 FUTURE_DS_01/
 │
-├── data/                    # Raw dataset
-├── processed_data/          # Cleaned dataset
-├── notebooks/               # Jupyter notebooks
-├── dashboard/               # Power BI dashboard (.pbix)
-├── images/                  # Dashboard screenshots and charts
+├── app.py
 ├── README.md
 ├── requirements.txt
-└── .gitignore
+├── .gitignore
+│
+├── data/
+│   └── Sample - Superstore.csv
+│
+├── processed_data/
+│   ├── Superstore_Cleaned.csv
+│   └── Superstore_Final.csv
+│
+├── notebooks/
+│   ├── 01_data_understanding_and_cleaning.ipynb
+│   └── 02_exploratory_data_analysis.ipynb
+│
+├── images/
+│
+└── dashboard_screenshots/
 ```
 
 ---
 
-## 📊 Dataset
+## ▶️ Running the Dashboard
 
-**Sample Superstore Dataset**
+Clone the repository
 
-The dataset contains retail transaction records including:
+```bash
+git clone https://github.com/rarethareja/FUTURE_DS_01.git
+```
 
-* Order Date
-* Sales
-* Profit
-* Quantity
-* Discount
-* Category
-* Sub-Category
-* Region
-* Customer Segment
-* Product Name
+Move into the project
+
+```bash
+cd FUTURE_DS_01
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Launch the dashboard
+
+```bash
+streamlit run app.py
+```
+
+The dashboard will open in your browser at:
+
+```
+http://localhost:8501
+```
 
 ---
 
-## 🚀 Current Progress
+# 📸 Dashboard Preview
 
-* ✅ Project setup
-* ✅ Git & GitHub integration
-* ✅ Data understanding
-* ✅ Data cleaning
-* 🔄 Exploratory Data Analysis (In Progress)
-* ⏳ Power BI Dashboard
-* ⏳ Business Insights & Recommendations
+## Dashboard Overview
+
+![Dashboard Overview](dashboard_screenshots/dashboard_overview.png)
+
+## Sales & Profit Analysis
+
+![Sales Analysis](dashboard_screenshots/sales_analysis.png)
+
+## Product & Segment Analysis
+
+![Product Analysis](dashboard_screenshots/product_analysis.png)
+
+## Interactive Filters
+
+![Filters](dashboard_screenshots/filters.png)
 
 ---
 
-## 📈 Expected Dashboard
+# 📈 Key Business Insights
 
-The final dashboard will include:
+- 📈 Sales increased steadily throughout the analysis period.
+- 💰 Technology generated the highest revenue and profit.
+- 🌍 Regional performance varied significantly.
+- 👥 Consumer customers contributed the largest share of sales.
+- 🎯 Higher discounts generally reduced profitability.
 
-* Sales KPIs
-* Revenue trend over time
-* Top-selling products
-* Category performance
-* Regional analysis
-* Customer segment analysis
-* Discount vs Profit analysis
-* Interactive filters
+---
+
+## 📌 Future Improvements
+
+- Deploy the dashboard online
+- Add forecasting using Machine Learning
+- Customer segmentation using clustering
+- Sales prediction models
+- Profit forecasting
 
 ---
 
@@ -100,4 +140,4 @@ The final dashboard will include:
 
 **Durlabh Thareja**
 
-Future Interns – Data Science & Analytics Internship (2026)
+GitHub: https://github.com/rarethareja
